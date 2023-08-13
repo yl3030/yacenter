@@ -1,3 +1,6 @@
+AOS.init({startEvent: 'load'});
+window.addEventListener('load', AOS.refresh);
+
 $(".header_lang_icon").click(function(){
     $(this).toggleClass("active");
     $(this).parents(".header_lang").find(".header_lang_list").fadeToggle(300);

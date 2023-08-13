@@ -8,12 +8,26 @@ $gray-300: #F3F3F3;
 $gray-400: #CECECE;
 $gray-main: #C5C5C5;
 $gray-600: #858585;
+$gray-700: #aeaeae;
 $transition: 0.3s;
+
+@mixin coverImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
 
 body {
     background-color: #FCFCFC;
     font-family: 'Khand', 'Noto Sans TC', sans-serif;
     color: $main-color;
+}
+
+* {
+    letter-spacing: 0.05em;
 }
 
 ul {
@@ -25,6 +39,7 @@ ul {
 a {
     text-decoration: none;
     color: $deep-main;
+    cursor: pointer;
 }
 
 input, button {
@@ -33,11 +48,25 @@ input, button {
     outline: none;
 }
 
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.mb-footer {
+    margin-bottom: 100px;
+}
+
+.main {
+    overflow: hidden;
+}
+
 .header {
     width: 100%;
     position: fixed;
     height: 120px;
-    background: linear-gradient(to top, transparent 0%, transparent 50%, #fff, 50%, #fff 100%);
+    background: linear-gradient(to top, transparent 0%, transparent 80%, #fff, 80%, #fff 100%);
+    z-index: 5;
     &_bg {
         position: absolute;
         width: 100%;
@@ -78,7 +107,7 @@ input, button {
                         transform: none;
                     }
                     >a {
-                        color: $second-color;
+                        color: $second-color !important;
                     }
                 }
             }
@@ -132,7 +161,7 @@ input, button {
         }
     }
     &_right {
-        height: 4.5vw;
+        height: 3.5vw;
     }
     &_search {
         width: 18px;
@@ -148,7 +177,6 @@ input, button {
             margin-right: 10px;
             position: absolute;
             top: 50%;
-            // right: calc(100% + 15px);
             left: 0;
             transform: translateY(-50%);
             opacity: 0;
@@ -302,8 +330,9 @@ input, button {
         }
     }
     @media screen and (max-width: 991px) {
+        background: linear-gradient(to top, transparent 0%, transparent 60%, #fff, 60%, #fff 100%);
         &_right {
-            height: 7.5vw;
+            height: 9.5vw;
         }
         &_nav {
             position: fixed;
@@ -314,7 +343,7 @@ input, button {
             left: 0;
             padding-top: 13vw;
             background-color: $gray-200;
-            // display: none;
+            display: none;
             &_first {
                 >li {
                     margin: 0;
@@ -338,6 +367,7 @@ input, button {
                                 background-size: contain;
                                 background-position: center;
                                 background-repeat: no-repeat;
+                                transition: $transition;
                             }
                         }
                         &::after {
@@ -387,6 +417,7 @@ input, button {
                 width: 78%;
                 margin: 0 auto;
                 display: none;
+                transition: none;
                 &_inner {
                     box-shadow: none;
                     background-color: transparent;
@@ -399,6 +430,55 @@ input, button {
                     }
                 }
             }
+        }
+    }
+    @media screen and (max-width: 767px) {
+        height: 100px;
+        &_bg {
+            bottom: -10px;
+        }
+        &_right {
+            height: 7.5vw;
+        }
+    }
+    @media screen and (max-width: 575px) {
+        height: 80px;
+        &_bg {
+            bottom: -10px;
+        }
+        &_right {
+            height: 10.5vw;
+        }
+        &_logo {
+            width: 60px;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        &_nav {
+            padding-top: 16vw;
+        }
+    }
+    @media screen and (max-width: 450px) {
+        &_right {
+            height: 13.5vw;
+        }
+        &_inner {
+            width: 90%;
+        }
+        &_nav {
+            padding-top: 95px;
+            &_first {
+                >li {
+                    >a {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 400px) {
+        &_right {
+            height: 16.5vw;
         }
     }
 }
