@@ -24,6 +24,16 @@ $(".header_menu").click(function(){
 })
 
 $(".header_nav_first>li.drop").click(function(){
-    $(this).toggleClass("active");
-    $(this).find(".header_nav_second").slideToggle(300);
+    if($(window).width() < 992) {
+        $(this).toggleClass("active");
+        $(this).find(".header_nav_second").slideToggle(300);
+    }
+})
+
+$(".btn-top").click(function(){
+    $("html, body").animate({scrollTop: 0},300);
+});
+
+$(".btn-accept").click(function(){
+    $(".cookies").fadeOut(300);
 })

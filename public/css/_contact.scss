@@ -1,0 +1,85 @@
+.contact {
+    .row {
+        margin-left: -20px;
+        margin-right: -20px;
+        >div {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    &_item {
+        background-color: #F1F1F1;
+        height: 58px;
+        display: flex;
+        align-items: center;
+        border-radius: 15px;
+        margin-bottom: 25px;
+        label {
+            width: 100px;
+            position: relative;
+            display: block;
+            text-align: center;
+            &::after {
+                position: absolute;
+                content: "";
+                width: 1px;
+                height: 22px;
+                background-color: $gray-main;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+            }
+        }
+        input, textarea {
+            width: calc(100% - 100px);
+            height: 100%;
+            padding: 10px;
+        }
+        textarea {
+            // padding-top: 18px;
+            padding-top: 0;
+        }
+        &.content {
+            height: 135px;
+            align-items: flex-start;
+            padding-top: 15px;
+        }
+    }
+    &_btn {
+        margin-top: 20px;
+        button {
+            width: 142px;
+            height: 45px;
+            border: 1px solid $second-color;
+            font-size: 18px;
+            margin: 0 12px;
+            transition: $transition;
+            &.btn-border {
+                color: $second-color;
+                &:hover {
+                    border-color: $main-color;
+                    color: $main-color;
+                }
+            }
+            &.btn-bg {
+                background-color: $second-color;
+                color: #fff;
+                &:hover {
+                    background-color: $main-color;
+                }
+            }
+        }
+    }
+    &_send {
+        h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: $main-color;
+            font-weight: 600;
+        }
+        p {
+            font-size: 16px;
+            color: $gray-700;
+        }
+    }
+}
