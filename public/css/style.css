@@ -53,8 +53,11 @@ input, button, textarea {
   position: absolute;
   width: 100%;
   bottom: 0;
+  height: 100%;
   left: 0;
   z-index: -1;
+  -webkit-filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.1));
 }
 
 .header_inner {
@@ -162,7 +165,7 @@ input, button, textarea {
 }
 
 .header_right {
-  height: 3.5vw;
+  height: 3vw;
 }
 
 .header_search {
@@ -371,6 +374,12 @@ input, button, textarea {
           transform: translate(-50%, -50%) rotate(-45deg);
 }
 
+@media screen and (max-width: 1399px) {
+  .header_right {
+    height: 4vw;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .header_right {
     height: 5.5vw;
@@ -383,7 +392,7 @@ input, button, textarea {
     background: linear-gradient(to top, transparent 0%, transparent 60%, #fff, 60%, #fff 100%);
   }
   .header_right {
-    height: 9.5vw;
+    height: 6.5vw;
   }
   .header_nav {
     position: fixed;
@@ -483,11 +492,8 @@ input, button, textarea {
   .header {
     height: 100px;
   }
-  .header_bg {
-    bottom: -10px;
-  }
   .header_right {
-    height: 7.5vw;
+    height: 9.5vw;
   }
 }
 
@@ -495,14 +501,11 @@ input, button, textarea {
   .header {
     height: 80px;
   }
-  .header_bg {
-    bottom: -10px;
-  }
   .header_right {
     height: 10.5vw;
   }
   .header_logo {
-    width: 60px;
+    width: 50px;
   }
 }
 
@@ -524,6 +527,9 @@ input, button, textarea {
   }
   .header_nav_first > li > a {
     width: 90%;
+  }
+  .header_left {
+    padding-bottom: 4vw;
   }
 }
 
@@ -2696,7 +2702,7 @@ input, button, textarea {
 }
 
 .product-detail_title {
-  padding: 75px 0 30px calc((100vw - 1320px) / 2 + 20px);
+  padding: 90px 0 30px calc((100vw - 1320px) / 2 + 20px);
   position: relative;
 }
 
@@ -2722,7 +2728,7 @@ input, button, textarea {
 
 .product-detail_content {
   padding: 40px 65px 60px calc((100vw - 1320px) / 2 + 20px);
-  width: 82.5%;
+  width: calc((100vw - (100vw - 1320px) / 2 - 40px) * 0.9);
   background-color: #F3F3F3;
   border-radius: 0 5.56vw 5.56vw 0;
   margin-bottom: 35px;
@@ -2751,7 +2757,7 @@ input, button, textarea {
 
 .product-detail_pic {
   position: absolute;
-  width: calc((1320px - 40px) * 0.47);
+  width: calc((1320px - 40px) * 0.45);
   top: 0;
   bottom: inherit;
   right: calc((100vw - 1320px) / 2 + 20px);
@@ -2923,8 +2929,11 @@ input, button, textarea {
   .product-detail_content {
     padding-left: 20px;
   }
+  .product-detail_content_inner {
+    width: 55%;
+  }
   .product-detail_pic {
-    width: 47%;
+    width: 45%;
     right: 20px;
   }
 }

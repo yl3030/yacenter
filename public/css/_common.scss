@@ -70,9 +70,12 @@ input, button, textarea {
     &_bg {
         position: absolute;
         width: 100%;
+        // bottom: -4px;
         bottom: 0;
+        height: 100%;
         left: 0;
         z-index: -1;
+        filter: drop-shadow(0 4px 15px rgba(0,0,0,0.1));
     }
     &_inner {
         width: 78%;
@@ -165,7 +168,7 @@ input, button, textarea {
         }
     }
     &_right {
-        height: 3.5vw;
+        height: 3vw;
     }
     &_search {
         width: 18px;
@@ -328,6 +331,11 @@ input, button, textarea {
             }
         }
     }
+    @media screen and (max-width: 1399px) {
+        &_right {
+            height: 4vw;
+        }
+    }
     @media screen and (max-width: 1199px) {
         &_right {
             height: 5.5vw;
@@ -336,7 +344,7 @@ input, button, textarea {
     @media screen and (max-width: 991px) {
         background: linear-gradient(to top, transparent 0%, transparent 60%, #fff, 60%, #fff 100%);
         &_right {
-            height: 9.5vw;
+            height: 6.5vw;
         }
         &_nav {
             position: fixed;
@@ -439,22 +447,22 @@ input, button, textarea {
     @media screen and (max-width: 767px) {
         height: 100px;
         &_bg {
-            bottom: -10px;
+            // bottom: -10px;
         }
         &_right {
-            height: 7.5vw;
+            height: 9.5vw;
         }
     }
     @media screen and (max-width: 575px) {
         height: 80px;
         &_bg {
-            bottom: -10px;
+            // bottom: -10px;
         }
         &_right {
             height: 10.5vw;
         }
         &_logo {
-            width: 60px;
+            width: 50px;
         }
     }
     @media screen and (max-width: 500px) {
@@ -478,6 +486,9 @@ input, button, textarea {
                     }
                 }
             }
+        }
+        &_left {
+            padding-bottom: 4vw;
         }
     }
     @media screen and (max-width: 400px) {

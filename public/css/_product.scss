@@ -12,7 +12,7 @@
             }
         }
         &_title {
-            padding: 75px 0 30px calc((100vw - 1320px) / 2 + 20px);
+            padding: 90px 0 30px calc((100vw - 1320px) / 2 + 20px);
             position: relative;
             h2 {
                 font-size: 40px;
@@ -34,7 +34,8 @@
         }
         &_content {
             padding: 40px 65px 60px calc((100vw - 1320px) / 2 + 20px);
-            width: 82.5%;
+            // width: 80%;
+            width: calc((100vw - (100vw - 1320px) / 2 - 40px) * 0.9);
             background-color: $gray-300;
             border-radius: 0 5.56vw 5.56vw 0;
             margin-bottom: 35px;
@@ -58,7 +59,7 @@
         }
         &_pic {
             position: absolute;
-            width: calc((1320px - 40px) * 0.47);
+            width: calc((1320px - 40px) * 0.45);
             top: 0;
             bottom: inherit;
             right: calc((100vw - 1320px) / 2 + 20px);
@@ -190,9 +191,12 @@
             }
             &_content {
                 padding-left: 20px;
+                &_inner {
+                    width: 55%;
+                }
             }
             &_pic {
-                width: 47%;
+                width: 45%;
                 right: 20px;
             }
         }
