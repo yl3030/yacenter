@@ -16,9 +16,9 @@
                             </ul>
                         </div>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="" class="<?php if($pageName == "solution") echo "active" ?>">Solution</a>
-                    </li>
+                    </li> -->
                     <li>
                         <a href="./about.php" class="<?php if($pageName == "about") echo "active" ?>">About Us</a>
                     </li>

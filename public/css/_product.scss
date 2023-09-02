@@ -287,6 +287,17 @@
                 }
             }
         }
+        @media screen and (max-width: 767px) {
+            height: 80px;
+            padding: 0 30px;
+            li {
+                margin: 0 5px;
+            }
+            a {
+                text-align: center;
+                // padding: 0 1px;
+            }
+        }
         @media screen and (max-width: 370px) {
             padding: 0 20px;
         }
@@ -403,17 +414,25 @@
     }
     &_class {
         color: $gray-300;
-        font-size: 205px;
+        font-size: 150px;
         font-weight: 900;
         margin: 0;
         position: absolute;
         left: 10%;
-        bottom: 0;
+        bottom: -10%;
         transform: translateY(70%);
         line-height: 1;
         display: none;
+        z-index: -1;
         &.active {
             display: block;
+        }
+        @media screen and (max-width: 2000px) {
+            bottom: -15%;
+        }
+        @media screen and (max-width: 1500px) {
+            bottom: -20%;
+            left: 5%;
         }
         @media screen and (max-width: 1100px) {
             transform: translateY(80%);
@@ -421,8 +440,9 @@
         }
         @media screen and (max-width: 767px) {
             transform: translateY(100%);
-            left: 0%;
+            // left: 0%;
             z-index: -1;
+            font-size: 130px;
         }
     }
 }

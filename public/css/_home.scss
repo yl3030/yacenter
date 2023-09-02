@@ -148,6 +148,7 @@
             width: 46%;
             left: -0.5%;
             top: -10%;
+            z-index: -1;
         }
         &_text {
             max-width: 840px;
@@ -205,34 +206,34 @@
             left: 50%;
             transform: translate(-50%, -50%);
             filter: blur(2px);
-            stroke-dasharray: 1098px;
-            stroke-dashoffset: 1098px;
+            // stroke-dasharray: 1098px;
+            // stroke-dashoffset: 1098px;
             &.car-line {
                 &-1 {
                     // animation: dash 1.5s linear forwards;
                     &.scroll {
-                        animation: dash 1.5s linear forwards;
+                        // animation: dash 1.5s linear forwards;
                     }
                 }
                 &-2 {
                     // animation: dash 3.5s linear forwards;
                     &.scroll {
-                        animation: dash 3.5s linear forwards;
+                        // animation: dash 3.5s linear forwards;
                     }
                 }
                 &-3 {
                     // animation: dash 5s linear forwards;
                     &.scroll {
-                        animation: dash 5s linear forwards;
+                        // animation: dash 5s linear forwards;
                     }
                 }
             }
             &.bus-line {
-                animation: dash 1.5s linear forwards;
+                // animation: dash 1.5s linear forwards;
                 filter: blur(4px);
             }
             &.crane-line {
-                animation: dash 1s linear forwards;
+                // animation: dash 1s linear forwards;
                 filter: blur(3px);
             }
         }

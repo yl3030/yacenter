@@ -1,6 +1,6 @@
 <?php 
     $pageName = "media";
-    $pageTitle = "video";
+    $pageTitle = "VIDEO";
     $bannerPic = "../public/img/banner-video.png";
 ?>
 

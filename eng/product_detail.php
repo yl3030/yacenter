@@ -1,6 +1,6 @@
 <?php 
     $pageName = "product";
-    $pageTitle = "product";
+    $pageTitle = "PRODUCT";
     $bannerPic = "../public/img/banner-product.png";
 ?>
 

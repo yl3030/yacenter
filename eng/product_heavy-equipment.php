@@ -1,7 +1,7 @@
 <?php 
     $pageName = "product";
     $pageTitle = "PRODUCT";
-    $productClass = "CAR";
+    $productClass = "HEAVY <br>EQUIPMENT";
     $bannerPic = "../public/img/banner-product.png";
     $productCarImg = [
         "../public/img/product-13.jpg",
@@ -63,9 +63,9 @@
         <div class="product">
             <div class="container">
                 <ul class="product_tab">
-                    <li><a href="./product_car.php" class="active">Car</a></li>
+                    <li><a href="./product_car.php">Car</a></li>
                     <li><a href="./product_bus.php">Bus</a></li>
-                    <li><a href="./product_heavy-equipment.php">heavy <br class="d-md-none">equipment</a></li>
+                    <li><a href="./product_heavy-equipment.php" class="active">heavy <br class="d-md-none">equipment</a></li>
                 </ul>
                 <p>
                     Yacenter Electric Co., Ltd. was established in 1997 and we are a professional manufacturer and exporter for automotive wire harness, and wiring and cords for electric products. We also sell the relevant KD parts and sell the relevant KD parts and components for original brands such as YAZAKI,SUMITOMO, TE, MOLEX, JST, and PED.

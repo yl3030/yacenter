@@ -1,6 +1,6 @@
 <?php 
     $pageName = "about";
-    $pageTitle = "about";
+    $pageTitle = "ABOUT";
     $bannerPic = "../public/img/banner-about.png";
     $milestoneDate = [
         "Oct. 2018",

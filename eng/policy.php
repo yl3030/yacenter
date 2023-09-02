@@ -1,6 +1,6 @@
 <?php 
     $pageName = "policy";
-    $pageTitle = "policy";
+    $pageTitle = "POLICY";
     $bannerPic = "../public/img/banner-home.png";
 ?>
 

@@ -1,7 +1,7 @@
 <?php 
     $pageName = "product";
     $pageTitle = "PRODUCT";
-    $productClass = "CAR";
+    $productClass = "BUS";
     $bannerPic = "../public/img/banner-product.png";
     $productCarImg = [
         "../public/img/product-13.jpg",
@@ -54,7 +54,7 @@
                 <ul class="d-flex align-items-center flex-wrap">
                     <li><a href="./index.php">HOME</a></li>
                     <li><a>PRODUCT</a></li>
-                    <li><a class="active">CAR</a></li>
+                    <li><a class="active">BUS</a></li>
                 </ul>
             </div>
         </div>
@@ -63,8 +63,8 @@
         <div class="product">
             <div class="container">
                 <ul class="product_tab">
-                    <li><a href="./product_car.php" class="active">Car</a></li>
-                    <li><a href="./product_bus.php">Bus</a></li>
+                    <li><a href="./product_car.php">Car</a></li>
+                    <li><a href="./product_bus.php" class="active">Bus</a></li>
                     <li><a href="./product_heavy-equipment.php">heavy <br class="d-md-none">equipment</a></li>
                 </ul>
                 <p>

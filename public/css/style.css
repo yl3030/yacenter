@@ -1341,6 +1341,7 @@ input, button, textarea {
   width: 46%;
   left: -0.5%;
   top: -10%;
+  z-index: -1;
 }
 
 .home-about_text {
@@ -1410,35 +1411,14 @@ input, button, textarea {
           transform: translate(-50%, -50%);
   -webkit-filter: blur(2px);
           filter: blur(2px);
-  stroke-dasharray: 1098px;
-  stroke-dashoffset: 1098px;
-}
-
-.home-about_line.car-line-1.scroll {
-  -webkit-animation: dash 1.5s linear forwards;
-          animation: dash 1.5s linear forwards;
-}
-
-.home-about_line.car-line-2.scroll {
-  -webkit-animation: dash 3.5s linear forwards;
-          animation: dash 3.5s linear forwards;
-}
-
-.home-about_line.car-line-3.scroll {
-  -webkit-animation: dash 5s linear forwards;
-          animation: dash 5s linear forwards;
 }
 
 .home-about_line.bus-line {
-  -webkit-animation: dash 1.5s linear forwards;
-          animation: dash 1.5s linear forwards;
   -webkit-filter: blur(4px);
           filter: blur(4px);
 }
 
 .home-about_line.crane-line {
-  -webkit-animation: dash 1s linear forwards;
-          animation: dash 1s linear forwards;
   -webkit-filter: blur(3px);
           filter: blur(3px);
 }
@@ -3042,6 +3022,19 @@ input, button, textarea {
   opacity: 1;
 }
 
+@media screen and (max-width: 767px) {
+  .product_tab {
+    height: 80px;
+    padding: 0 30px;
+  }
+  .product_tab li {
+    margin: 0 5px;
+  }
+  .product_tab a {
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 370px) {
   .product_tab {
     padding: 0 20px;
@@ -3184,20 +3177,34 @@ input, button, textarea {
 
 .product_class {
   color: #F3F3F3;
-  font-size: 205px;
+  font-size: 150px;
   font-weight: 900;
   margin: 0;
   position: absolute;
   left: 10%;
-  bottom: 0;
+  bottom: -10%;
   -webkit-transform: translateY(70%);
           transform: translateY(70%);
   line-height: 1;
   display: none;
+  z-index: -1;
 }
 
 .product_class.active {
   display: block;
+}
+
+@media screen and (max-width: 2000px) {
+  .product_class {
+    bottom: -15%;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .product_class {
+    bottom: -20%;
+    left: 5%;
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -3212,8 +3219,8 @@ input, button, textarea {
   .product_class {
     -webkit-transform: translateY(100%);
             transform: translateY(100%);
-    left: 0%;
     z-index: -1;
+    font-size: 130px;
   }
 }
 
