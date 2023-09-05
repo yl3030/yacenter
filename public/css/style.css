@@ -1340,7 +1340,7 @@ input, button, textarea {
   position: absolute;
   width: 46%;
   left: -0.5%;
-  top: -10%;
+  top: 0;
   z-index: -1;
 }
 
