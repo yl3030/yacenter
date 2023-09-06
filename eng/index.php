@@ -156,7 +156,7 @@
                 <div class="tab-pane fade show active" id="pills-car" role="tabpanel" aria-labelledby="pills-car-tab">
                     <div class="home-about_tabContent">
                         <img class="home-about_bigpic" src="../public/img/car.png" alt="">
-                        <svg class="home-about_line car-line-1" width="856" height="572" viewBox="0 0 856 572" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- <svg class="home-about_line car-line-1" width="856" height="572" viewBox="0 0 856 572" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M779.352 355.9L772.914 362.286C766.234 369.422 756.297 372.506 746.766 370.401C742.875 369.548 738.93 371.543 737.312 375.19L733.477 383.845C730.875 389.714 726.805 394.808 721.664 398.642L673.258 434.733C655.422 448.036 634.781 457.176 612.867 460.995C611.961 461.152 611.062 461.3 610.172 461.441C601.773 462.725 593.586 458.123 590.289 450.274C581.453 429.263 560.055 385.989 527.453 366.731C475.836 336.243 441.297 344.882 422.016 365.408C418.758 368.882 416.133 371.715 414.039 374.016C409.219 379.306 401.469 380.714 395.094 377.475L381.695 370.667C378.398 368.992 375.836 366.151 374.508 362.693C373.008 358.796 369.953 355.697 366.078 354.155L304.383 329.584C300.828 328.167 296.93 327.893 293.211 328.801L287.656 330.155C284.367 330.953 280.914 330.687 277.781 329.388L241.648 314.395C240.227 313.808 239.695 312.07 240.531 310.779L241.938 308.619C243.313 306.507 242.305 303.658 239.914 302.876L198.102 289.228C190.977 286.904 185.266 281.481 182.609 274.462C177.656 261.37 168.258 240.006 156.57 230.217C154.836 228.769 155.32 225.991 157.461 225.271L162.945 223.44C165.086 222.728 165.594 219.919 163.836 218.494L109.922 174.852C105.906 171.597 103.789 166.542 104.289 161.392C104.875 155.383 108.914 150.273 114.617 148.324L256.945 94.3657C258.875 93.7084 259.125 91.0791 257.352 90.0696C256.805 89.7566 256.148 89.6783 255.539 89.8427L242.805 93.411C240.539 94.0449 238.188 92.7537 237.5 90.5C236.828 88.3089 234.57 87.0177 232.344 87.5498L229.469 88.2463" stroke="url(#paint0_linear_443_1119)" stroke-width="5" stroke-miterlimit="10"/>
                             <defs>
                             <linearGradient id="paint0_linear_443_1119" x1="441.784" y1="87.4303" x2="441.784" y2="461.655" gradientUnits="userSpaceOnUse">
@@ -196,7 +196,7 @@
                             <stop offset="1" stop-color="#FF8F27"/>
                             </linearGradient>
                             </defs>
-                        </svg>
+                        </svg> -->
                         <div class="home-about_pin-warp">
                             <?php for($i=0;$i<6;$i++) { ?>
                                 <div class="home-about_pin car-pin-<?php echo $i+1 ?>" data-product="#car-<?php echo $i+1 ?>">
@@ -228,7 +228,7 @@
                 <div class="tab-pane fade" id="pills-bus" role="tabpanel" aria-labelledby="pills-bus-tab">
                     <div class="home-about_tabContent">
                         <img class="home-about_bigpic" src="../public/img/bus.png" alt="">
-                        <svg class="home-about_line bus-line" width="856" height="572" viewBox="0 0 856 572" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- <svg class="home-about_line bus-line" width="856" height="572" viewBox="0 0 856 572" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M770 360.5L763.564 367.018C756.886 374.303 740.626 377.32 731.097 375.171C727.207 374.3 723.262 376.337 721.646 380.06L717.81 388.894C715.209 394.885 711.14 400.086 706 404L652 443.5C634.168 457.079 630.91 458.602 609 462.5C609 462.5 594.5 464.5 585 464C563 464 536.296 447.012 533 439C524.166 417.552 508 375 479 357.5C451 343.5 417 354.5 406.975 380.713C406.975 380.713 403.593 390.651 401.5 393C388.5 404.5 373.5 389.5 367.5 386L353 376.5C345.5 372.5 353.385 359.5 351.5 354.5C350 350.522 346.683 348.84 342.809 347.267L281.126 322.185C277.572 320.739 273.674 320.459 269.956 321.386L264.403 322.768C261.114 323.583 257.662 323.311 254.53 321.985L218.404 306.68C216.982 306.081 216.451 304.308 217.287 302.99L218.693 300.785C220.068 298.628 219.06 295.72 216.67 294.922L149.723 275.073C142.599 272.701 136.889 267.165 134.233 260C129.281 246.636 110.421 224.459 98.7357 214.466C97.0017 212.988 97.486 210.152 99.6262 209.417L105.109 207.548C107.25 206.821 107.757 203.954 106 202.5L54.5 179.5C50.4852 176.177 49.8684 173.517 50.3683 168.26C50.9541 162.126 56.3984 159.447 62.1004 157.458L257.802 99.9999C265 98.9999 265 92.4999 251 89.9999C241 88.2142 236.5 92.4999 228.5 93.9999" stroke="url(#paint0_linear_451_1135)" stroke-width="7" stroke-miterlimit="10"/>
                             <defs>
                             <linearGradient id="paint0_linear_451_1135" x1="410.11" y1="89.572" x2="410.11" y2="464.08" gradientUnits="userSpaceOnUse">
@@ -236,7 +236,7 @@
                             <stop offset="1" stop-color="#FF8F27"/>
                             </linearGradient>
                             </defs>
-                        </svg>
+                        </svg> -->
                         <div class="home-about_pin-warp">
                             <?php for($i=0;$i<6;$i++) { ?>
                                 <div class="home-about_pin bus-pin-<?php echo $i+1 ?>" data-product="#bus-<?php echo $i+1 ?>">
@@ -268,7 +268,7 @@
                 <div class="tab-pane fade" id="pills-crane" role="tabpanel" aria-labelledby="pills-crane-tab">
                     <div class="home-about_tabContent">
                         <img class="home-about_bigpic" src="../public/img/crane.png" alt="">
-                        <svg class="home-about_line crane-line" width="856" height="572" viewBox="0 0 856 572" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- <svg class="home-about_line crane-line" width="856" height="572" viewBox="0 0 856 572" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M651.5 414L691.324 128.207C692.445 120.159 684.007 114.204 676.8 117.958L453.069 234.478C448.046 237.093 443.504 240.543 439.637 244.68L400.004 287.08C395.229 292.189 391.876 298.46 390.281 305.269L368.602 397.783C364.465 415.439 348.968 428.102 330.842 428.639L176.694 433.209C163.355 433.604 153.378 421.073 156.751 408.161L159.377 398.111C161.376 390.464 167.69 384.711 175.491 383.431L221.759 375.842" stroke="url(#paint0_linear_451_1139)" stroke-width="5"/>
                             <defs>
                             <linearGradient id="paint0_linear_451_1139" x1="422" y1="109" x2="422" y2="434" gradientUnits="userSpaceOnUse">
@@ -276,7 +276,7 @@
                             <stop offset="1" stop-color="#27FFF2"/>
                             </linearGradient>
                             </defs>
-                        </svg>
+                        </svg> -->
                         <div class="home-about_pin-warp">
                             <?php for($i=0;$i<4;$i++) { ?>
                                 <div class="home-about_pin crane-pin-<?php echo $i+1 ?>" data-product="#crane-<?php echo $i+1 ?>">

@@ -11,8 +11,8 @@
                         <div class="header_nav_second">
                             <ul class="header_nav_second_inner">
                                 <li><a href="./product_car.php">CAR</a></li>
-                                <li><a href="">BUS</a></li>
-                                <li><a href="">CRANE</a></li>
+                                <li><a href="./product_bus.php">BUS</a></li>
+                                <li><a href="./product_heavy-equipment.php">HEAVY <br>EQUIPMENT</a></li>
                             </ul>
                         </div>
                     </li>
