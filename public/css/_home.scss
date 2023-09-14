@@ -87,9 +87,42 @@
     }
     &-banner {
         position: relative;
-        width: 100%;
-        padding-bottom: 45%;
         margin-bottom: 40px;
+        &_next, &_prev {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: $second-color;
+            border-radius: 50%;
+            margin: 0;
+            top: 42%;
+            transform: translateY(-50%);
+            transition: $transition;
+            cursor: pointer;
+            z-index: 4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg {
+                width: 20px;
+                height: 20px;
+                path {
+                    stroke: #fff;
+                }
+            }
+        }
+        &_next {
+            right: 40px;
+        }
+        &_prev {
+            left: 40px;
+        }
+        &_swiper {
+            .swiper-slide {
+                width: 100%;
+                padding-bottom: 45%;
+            }  
+        }
         &_pic {
             position: absolute;
             width: 100%;
@@ -112,6 +145,7 @@
             width: 100%;
             left: 0;
             bottom: 0;
+            z-index: 3;
         }
         @media screen and (max-width: 1100px) {
             &_title {
@@ -119,7 +153,29 @@
             }
         }
         @media screen and (max-width: 991px) {
-            padding-bottom: 60%;
+            &_next {
+                right: 20px;
+            }
+            &_prev {
+                left: 20px;
+            }
+            &_next, &_prev {
+                top: 47%;
+            }
+            &_swiper {
+                .swiper-slide {
+                    padding-bottom: 60%;
+                }   
+                .swiper-button-prev {
+                    left: 20px;
+                }
+                .swiper-button-next {
+                    right: 20px;
+                }
+                .swiper-button-prev, .swiper-button-next {
+                    top: 47%;
+                }
+            }
             &_title {
                 top: 40%;
             }
@@ -129,15 +185,41 @@
                 font-size: 30px;
                 left: 5%;
             }
+            &_next, &_prev {
+                background-color: transparent;
+                top: inherit;
+                bottom: 0;
+                transform: none;
+                svg {
+                    path {
+                        stroke: $gray-600;
+                    }
+                }
+            }
+            &_next {
+                right: inherit;
+                left: 60px;
+            }
+            &_prev {
+                left: 20px;
+            }
         }
         @media screen and (max-width: 575px) {
-            padding-bottom: 80%;
+            &_swiper {
+                .swiper-slide {
+                    padding-bottom: 80%;
+                }   
+            }
             &_title {
                 font-size: 26px;
             }
         }
         @media screen and (max-width: 450px) {
-            padding-bottom: 100%;
+            &_swiper {
+                .swiper-slide {
+                    padding-bottom: 100%;
+                }   
+            }
         }
     }
     &-about {

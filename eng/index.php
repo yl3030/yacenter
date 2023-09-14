@@ -1,11 +1,11 @@
 <?php 
     $carProductImg = [
-        "../public/img/product-1.png",
-        "../public/img/product-2.png",
-        "../public/img/product-3.png",
-        "../public/img/product-4.png",
-        "../public/img/product-5.png",
-        "../public/img/product-6.png",
+        "../public/img/product-1.jpg",
+        "../public/img/product-2.jpg",
+        "../public/img/product-3.jpg",
+        "../public/img/product-17.png",
+        "../public/img/product-5.jpg",
+        "../public/img/product-6.jpg",
     ];
     $carProductName = [
         "ECU system wire harness",
@@ -16,12 +16,12 @@
         "audio",
     ];
     $busProductImg = [
-        "../public/img/product-7.jpg",
-        "../public/img/product-8.png",
-        "../public/img/product-9.jpg",
-        "../public/img/product-10.png",
-        "../public/img/product-11.png",
-        "../public/img/product-12.jpg",
+        "../public/img/product-1.jpg",
+        "../public/img/product-2.jpg",
+        "../public/img/product-3.jpg",
+        "../public/img/product-17.png",
+        "../public/img/product-5.jpg",
+        "../public/img/product-6.jpg",
     ];
     $busProductName = [
         "CCD",
@@ -32,10 +32,10 @@
         "Camera cable for Heavy equipment",
     ];
     $craneProductImg = [
-        "../public/img/product-13.jpg",
-        "../public/img/product-14.png",
-        "../public/img/product-15.png",
-        "../public/img/product-16.png",
+        "../public/img/product-1.jpg",
+        "../public/img/product-2.jpg",
+        "../public/img/product-3.jpg",
+        "../public/img/product-17.png",
     ];
     $craneProductName = [
         "deutsch",
@@ -44,10 +44,10 @@
         "ECU system wire harness",
     ];
     $productImg = [
-        "../public/img/product-1.png",
-        "../public/img/product-2.png",
-        "../public/img/product-3.png",
-        "../public/img/product-4.png",
+        "../public/img/product-3.jpg",
+        "../public/img/product-17.png",
+        "../public/img/product-5.jpg",
+        "../public/img/product-6.jpg",
     ];
     $productName = [
         "ECU system wire harness",
@@ -103,12 +103,30 @@
 
     <main class="main">
         <div class="home-banner">
-            <img class="home-banner_pic" src="../public/img/banner-home.png" alt="">
-            <h1 class="home-banner_title">
-                SloganSloganSloganSlogan<br>
-                SloganSloganSloganSloganSloganSlogan
-            </h1>
+            <div class="swiper-container home-banner_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="home-banner_pic" src="../public/img/banner-home.jpg" alt="">
+                        <h1 class="home-banner_title">
+                            SloganSloganSloganSlogan<br>
+                            SloganSloganSloganSloganSloganSlogan
+                        </h1>
+                    </div>
+                </div>     
+            </div>
             <img class="home-banner_style" src="../public/img/banner_style.svg" alt="">
+            <div class="home-banner_next">
+                <svg width="22" height="15" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 7.5H21.2429" stroke="#444444" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14.7429 1L21.2429 7.5L14.7429 14" stroke="#444444" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="home-banner_prev">
+                <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.4546 5.89771H1.35232" stroke="#444444" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6.52295 0.727295L1.35249 5.89775L6.52295 11.0682" stroke="#444444" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
         </div>
     
         <div class="home-about">
@@ -384,6 +402,15 @@
     <?php include("../include/script.php") ?>
 
     <script>
+        var swiperBanner = new Swiper(".home-banner_swiper", {
+            slidesPerView: 1,
+            loop: true,
+            speed: 1000,
+            navigation: {
+                nextEl: ".home-banner_next",
+                prevEl: ".home-banner_prev",
+            },
+        });
         $(".home-about_pin .pin").click(function(){
             if($(window).width() >= 576) {
                 if($(this).parents(".home-about_pin").hasClass("active")) {

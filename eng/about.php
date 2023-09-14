@@ -102,7 +102,7 @@
             </div>
             <div class="about_profile">
                 <h3>Company Profile</h3>
-                <div class="d-flex align-items-center justify-content-md-between justify-content-center flex-wrap">
+                <div class="d-flex justify-content-md-between justify-content-center flex-wrap">
                     <div class="about_profile_item">
                         <div class="about_profile_pic"><img src="../public/img/LOGO.png" alt=""></div>
                         <h4>Established</h4>
@@ -130,7 +130,7 @@
                     <div class="about_profile_item">
                         <div class="about_profile_pic"><img src="../public/img/about-icon-4.svg" alt=""></div>
                         <h4>Certificated</h4>
-                        <p>IATF-16949</p>
+                        <p>IATF-16949<br>UL ZPFW2.E349597</p>
                     </div>
                 </div>
             </div>

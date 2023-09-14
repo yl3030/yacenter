@@ -1,7 +1,7 @@
 <?php 
     $pageName = "contact";
     $pageTitle = "CONTACT";
-    $bannerPic = "../public/img/banner-contact.png";
+    $bannerPic = "../public/img/banner-contact.jpg";
 ?>
 
 <!DOCTYPE html>
@@ -68,10 +68,22 @@
                             <textarea name="" id="" cols="30" rows="10"></textarea>
                         </div>
                     </div>
-                </div>
-                <div class="contact_btn d-flex align-items-center justify-content-center">
-                    <button class="btn-border">Reset</button>
-                    <button class="btn-bg">Submit</button>
+                    <div class="col-lg-6">
+                        <div class="contact_item">
+                            <label for="">Verification</label>
+                            <div class="contact_certify d-flex align-items-center justify-content-between">
+                                <input type="number">
+                                <img class="contact_certify_transfer" src="../public/img/icon_transfer.svg" alt="">
+                                <img class="contact_certify_num" src="../public/img/certify.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="contact_btn d-flex align-items-center justify-content-lg-end justify-content-center">
+                            <button class="btn-border">Reset</button>
+                            <button class="btn-bg">Submit</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

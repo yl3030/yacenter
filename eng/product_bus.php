@@ -2,17 +2,17 @@
     $pageName = "product";
     $pageTitle = "BUS";
     $productClass = "BUS";
-    $bannerPic = "../public/img/banner-product.png";
+    $bannerPic = "../public/img/banner-product.jpg";
     $productCarImg = [
-        "../public/img/product-13.jpg",
-        "../public/img/product-14.png",
-        "../public/img/product-15.png",
-        "../public/img/product-16.png",
-        "../public/img/product-1.png",
-        "../public/img/product-2.png",
-        "../public/img/product-3.png",
-        "../public/img/product-4.png",
-        "../public/img/product-5.png",
+        "../public/img/product-1.jpg",
+        "../public/img/product-2.jpg",
+        "../public/img/product-3.jpg",
+        "../public/img/product-17.png",
+        "../public/img/product-5.jpg",
+        "../public/img/product-6.jpg",
+        "../public/img/product-1.jpg",
+        "../public/img/product-2.jpg",
+        "../public/img/product-3.jpg",
     ];
     $productCarName = [
         "ECU system wire harness",

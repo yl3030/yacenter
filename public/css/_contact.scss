@@ -30,12 +30,12 @@
                 transform: translateY(-50%);
             }
         }
-        input, textarea {
+        >input, >textarea {
             width: calc(100% - 100px);
             height: 100%;
             padding: 10px;
         }
-        textarea {
+        >textarea {
             // padding-top: 18px;
             padding-top: 0;
         }
@@ -46,7 +46,7 @@
         }
     }
     &_btn {
-        margin-top: 20px;
+        // margin-top: 20px;
         button {
             width: 142px;
             height: 45px;
@@ -80,6 +80,35 @@
         p {
             font-size: 16px;
             color: $gray-700;
+        }
+    }
+    &_certify {
+        height: 100%;
+        width: calc(100% - 100px);
+        padding: 10px 20px;
+        input {
+            height: 100%;
+            width: calc(100% - 20px - 60px - 20px);
+        }
+        &_transfer {
+            width: 20px;
+            cursor: pointer;
+        }
+        &_num {
+            width: 60px;
+        }
+    }
+    @media screen and (max-width: 370px) {
+        &_certify {
+            input {
+                width: calc(100% - 15px - 40px - 15px);
+            }
+            &_transfer {
+                width: 15px;
+            }
+            &_num {
+                width: 40px;
+            }
         }
     }
 }

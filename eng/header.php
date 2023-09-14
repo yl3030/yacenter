@@ -20,7 +20,7 @@
                         <a href="" class="<?php if($pageName == "solution") echo "active" ?>">Solution</a>
                     </li> -->
                     <li>
-                        <a href="./about.php" class="<?php if($pageName == "about") echo "active" ?>">About Us</a>
+                        <a href="./about.php" class="<?php if($pageName == "about") echo "active" ?>">About</a>
                     </li>
                     <li class="drop">
                         <a class="<?php if($pageName == "media") echo "active" ?>">Media</a>

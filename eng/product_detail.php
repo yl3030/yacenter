@@ -1,7 +1,7 @@
 <?php 
     $pageName = "product";
     $pageTitle = "PRODUCT";
-    $bannerPic = "../public/img/banner-product.png";
+    $bannerPic = "../public/img/banner-product.jpg";
 ?>
 
 <!DOCTYPE html>
