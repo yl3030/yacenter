@@ -1,7 +1,7 @@
 <?php 
     $pageName = "media";
     $pageTitle = "VIDEO";
-    $bannerPic = "../public/img/banner-video.png";
+    $bannerPic = "../public/img/banner-media.png";
 ?>
 
 <!DOCTYPE html>

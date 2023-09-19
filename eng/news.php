@@ -1,7 +1,7 @@
 <?php 
     $pageName = "media";
     $pageTitle = "NEWS";
-    $bannerPic = "../public/img/banner-home.png";
+    $bannerPic = "../public/img/banner-media.png";
     $newsImg = [
         "../public/img/product-5.png",
         "../public/img/product-6.png",

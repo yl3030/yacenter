@@ -1,7 +1,7 @@
 <?php 
     $pageName = "media";
     $pageTitle = "BROCHURE";
-    $bannerPic = "../public/img/banner-brochure.png";
+    $bannerPic = "../public/img/banner-media.png";
     $brochureImg = [
         "../public/img/product-5.png",
         "../public/img/product-6.png",
