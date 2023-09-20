@@ -65,31 +65,26 @@
         "../public/img/product-5.png",
         "../public/img/product-6.png",
         "../public/img/product-7.jpg",
-        "../public/img/product-8.png",
     ];
     $mediaTag = [
         "NEWS",
         "EXHIBITION",
         "BLOG",
-        "NEWS",
     ];
     $mediaDate = [
         "2023/03/03",
         "2023/03/04",
         "2023/03/05",
-        "2023/03/06",
     ];
     $mediaTitle = [
         "Lorem ipsum dolor sit amet,",
         "consectetur adipiscing elit",
         "sed do eiusmod tempor incididunt",
-        "ut labore et dolore magna aliqua",
     ];
     $mediaIntro = [
         "Fermentum iaculis eu non diam phasellus vestibulum lorem. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Nulla facilisi etiam dignissim diam quis enim.",
         "Mauris augue neque gravida in fermentum et. Venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus.",
         "Tincidunt augue interdum velit euismod in pellentesque massa placerat. Adipiscing at in tellus integer feugiat.",
-        "Ac felis donec et odio pellentesque diam volutpat commodo sed. Placerat duis ultricies lacus sed turpis.",
     ];
 ?>
 
@@ -376,7 +371,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <?php for($i=0;$i<4;$i++) { ?>
+                    <?php for($i=0;$i<3;$i++) { ?>
                         <div class="col-md-4 col-6">
                             <a href="./news_detail.php" class="media-list_item">
                                 <div class="media-list_pic">

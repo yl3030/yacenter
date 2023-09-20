@@ -2136,16 +2136,6 @@ input, button, textarea {
   z-index: -1;
 }
 
-.home-media .row > div:last-child {
-  display: none;
-}
-
-@media screen and (max-width: 767px) {
-  .home-media .row > div:last-child {
-    display: block;
-  }
-}
-
 @-webkit-keyframes dash {
   to {
     stroke-dashoffset: 0;
