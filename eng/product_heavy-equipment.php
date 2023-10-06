@@ -67,7 +67,7 @@
                     <li><a href="./product_bus.php">Bus</a></li>
                     <li><a href="./product_heavy-equipment.php" class="active">Heavy <br class="d-md-none">equipment</a></li>
                 </ul>
-                <p>
+                <p class="product_intro">
                     Yacenter Electric Co., Ltd. was established in 1997 and we are a professional manufacturer and exporter for automotive wire harness, and wiring and cords for electric products. We also sell the relevant KD parts and sell the relevant KD parts and components for original brands such as YAZAKI,SUMITOMO, TE, MOLEX, JST, and PED.
                 </p>
                 <div class="row product-list">

@@ -1330,6 +1330,7 @@ input, button, textarea {
   top: 36%;
   letter-spacing: 0.05em;
   word-break: break-all;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .home-banner_style {
@@ -1431,6 +1432,7 @@ input, button, textarea {
   margin: 0 auto 45px;
   line-height: 1.5;
   text-align: justify;
+  font-size: 18px;
 }
 
 .home-about_tab {
@@ -1577,6 +1579,7 @@ input, button, textarea {
 .home-about_pin.car-pin-3 {
   top: 39%;
   right: 34.5%;
+  z-index: 1;
 }
 
 .home-about_pin.car-pin-4 {
@@ -1597,6 +1600,7 @@ input, button, textarea {
 .home-about_pin.bus-pin-1 {
   bottom: 39%;
   right: 36.5%;
+  z-index: 1;
 }
 
 .home-about_pin.bus-pin-2 {
@@ -1607,6 +1611,7 @@ input, button, textarea {
 .home-about_pin.bus-pin-3 {
   top: 27%;
   right: 33.5%;
+  z-index: 2;
 }
 
 .home-about_pin.bus-pin-4 {
@@ -1627,11 +1632,13 @@ input, button, textarea {
 .home-about_pin.crane-pin-1 {
   bottom: 20%;
   right: 58.5%;
+  z-index: 1;
 }
 
 .home-about_pin.crane-pin-2 {
   bottom: 35%;
   right: 46%;
+  z-index: 2;
 }
 
 .home-about_pin.crane-pin-3 {
@@ -1716,16 +1723,6 @@ input, button, textarea {
   bottom: 0;
   width: 100%;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-}
-
-.home-about_product:hover {
-  -webkit-box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-}
-
-.home-about_product:hover > img {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
 }
 
 .home-about_product-m {
@@ -1975,7 +1972,7 @@ input, button, textarea {
   content: "";
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.54);
+  background-color: rgba(0, 0, 0, 0.3);
   top: 0;
   left: 0;
   -webkit-transition: 0.3s;
@@ -2761,6 +2758,7 @@ input, button, textarea {
   font-size: 40px;
   font-weight: 600;
   margin: 0;
+  width: 50%;
 }
 
 .product-detail_title h3 {
@@ -2794,6 +2792,7 @@ input, button, textarea {
   margin: 0;
   line-height: 1.75;
   text-align: justify;
+  font-size: 18px;
 }
 
 .product-detail_appl {
@@ -2992,6 +2991,9 @@ input, button, textarea {
 @media screen and (max-width: 991px) {
   .product-detail_title {
     padding-right: 20px;
+  }
+  .product-detail_title h2 {
+    width: 100%;
   }
   .product-detail_pic {
     position: static;
@@ -3295,8 +3297,12 @@ input, button, textarea {
   }
 }
 
+.product_intro {
+  font-size: 18px;
+}
+
 .about h3 {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 600;
   margin-bottom: 30px;
 }
@@ -3307,6 +3313,7 @@ input, button, textarea {
 
 .about_milestone_swiper .swiper-slide {
   position: relative;
+  padding-right: 15px;
 }
 
 .about_milestone_swiper .swiper-slide::after {
@@ -3341,7 +3348,7 @@ input, button, textarea {
   cursor: pointer;
   position: absolute;
   bottom: -11px;
-  z-index: 5;
+  z-index: 4;
 }
 
 .about_milestone_swiper_prev svg, .about_milestone_swiper_next svg {
@@ -3377,7 +3384,7 @@ input, button, textarea {
 }
 
 .about_milestone_title {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 600;
   margin-bottom: 3px;
   color: #22B1DB;
@@ -3385,7 +3392,7 @@ input, button, textarea {
 
 .about_milestone_content {
   color: #909090;
-  font-weight: 18px;
+  font-weight: 20px;
   margin-bottom: 20px;
 }
 
@@ -3467,7 +3474,7 @@ input, button, textarea {
 .about_profile_item h4 {
   text-align: center;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
   color: #203354;
   margin-bottom: 3px;
 }
@@ -3476,6 +3483,7 @@ input, button, textarea {
   text-align: center;
   color: #858585;
   margin: 0;
+  font-size: 18px;
 }
 
 .about_profile_pic {
@@ -3569,7 +3577,7 @@ input, button, textarea {
 }
 
 .about_pic_text h4 {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 600;
   margin-bottom: 20px;
   color: #fff;
@@ -3579,6 +3587,7 @@ input, button, textarea {
   margin: 0;
   text-align: justify;
   color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
 }
 
 .about_pic_text ul li {
@@ -3586,6 +3595,7 @@ input, button, textarea {
   position: relative;
   color: rgba(255, 255, 255, 0.8);
   text-align: justify;
+  font-size: 18px;
 }
 
 .about_pic_text ul li::before {

@@ -70,7 +70,7 @@
                                 <?php for($i=0;$i<16;$i++) { ?>
                                     <div class="swiper-slide">
                                         <h4 class="about_milestone_title"><?php echo $milestoneDate[$i] ?></h4>
-                                        <p class="about_milestone_content"><?php echo $milestoneContent[$i] ?><</p>
+                                        <p class="about_milestone_content"><?php echo $milestoneContent[$i] ?></p>
                                         <div class="about_milestone_dot"></div>
                                     </div>
                                 <?php } ?>
@@ -129,7 +129,7 @@
                     <div class="about_profile_line"></div>
                     <div class="about_profile_item">
                         <div class="about_profile_pic"><img src="../public/img/about-icon-4.svg" alt=""></div>
-                        <h4>Certificated</h4>
+                        <h4>Certificates</h4>
                         <p>IATF-16949<br>UL ZPFW2.E349597</p>
                     </div>
                 </div>
@@ -141,7 +141,7 @@
                         <div class="about_pic_text">
                             <h4>About Yacenter</h4>
                             <p>
-                                Yacenter Electric Co., Ltd. was established in 1997 and we are a professional manufacturer and exporter for automotive wire harness, and wiring and cords for electric products. We also sell the relevant KD parts and sell the relevant KD parts and components for original brands such as YAZAKI,SUMITOMO, TE, MOLEX, JST, and PED.
+                                Yacenter Electric Co., Ltd. was established in 1997 as a qualified wire-harness manufacturer of OEM and aftermarket for producing cable & wire harness of automotive, electrical products and so on. Our components' suppliers include YAZAKI,SUMITOMO, TE, MOLEX, JST, PED etc., which make we be eligible to provide the most competitive quotation and high-quality products to our clients.
                             </p>
                         </div>
                     </div>
@@ -150,7 +150,7 @@
                         <div class="about_pic_text">
                             <h4>Customized products</h4>
                             <p>
-                                 We devote to meet with the demand for customized products by self-developing, designing , processing & shipping .
+                                We devote ourselves to achieve clients' demands ranged over customizing, designing, manufacturing and delivering.
                             </p>
                         </div>
                     </div>
@@ -159,9 +159,9 @@
                         <div class="about_pic_text">
                             <h4>Environmental Policy</h4>
                             <ul>
-                                <li>All operations are in compliance with environmental safety laws, fulfill social responsibility. </li>
-                                <li>Our products comply with environmental regulations and material requirements of customers.</li>
-                                <li>With the goal of fulfilling customer requirements and international regulations, Yacenter has conducted suppliers conflict minerals survey program based on Conflict-Free Sourcing Initiative(CFSI) Conflict Minerals Reporting Template(CMRT) since 2011.</li>
+                                <li>To take all responsibilities of protecting our living environment, we strictly obey Taiwan’s environmental laws.</li>
+                                <li>To prevent from polluting air and water, Yacenter observes all processes of manufacturing wire harnesses and frequently remind staff to follow environmental regulations.</li>
+                                <li>We consistently survey our material and component suppliers to see if there are any violations of Conflict-Free Sourcing Initiative (CFSI) and Conflict Minerals Reporting Template (CMRT).</li>
                             </ul>
                         </div>
                     </div>
@@ -189,7 +189,7 @@
                     slidesPerView: 3,
                 },
                 992: {
-                    slidesPerView: 5,
+                    slidesPerView: 4,
                 },
             },
         })

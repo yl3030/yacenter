@@ -213,10 +213,9 @@
                         <div class="home-about_pin-warp">
                             <?php for($i=0;$i<6;$i++) { ?>
                                 <div class="home-about_pin car-pin-<?php echo $i+1 ?>" data-product="#car-<?php echo $i+1 ?>">
-                                    <a href="./product_detail.php" class="home-about_product">
+                                    <div class="home-about_product">
                                         <img src="<?php echo $carProductImg[$i] ?>" alt="">
-                                        <p><?php echo $carProductName[$i] ?></p>
-                                    </a>
+                                    </div>
                                     <div class="pin">
                                         <div class="pin_inner">
                                             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -253,10 +252,10 @@
                         <div class="home-about_pin-warp">
                             <?php for($i=0;$i<6;$i++) { ?>
                                 <div class="home-about_pin bus-pin-<?php echo $i+1 ?>" data-product="#bus-<?php echo $i+1 ?>">
-                                    <a href="./product_detail.php" class="home-about_product">
+                                    <div class="home-about_product">
                                         <img src="<?php echo $busProductImg[$i] ?>" alt="">
-                                        <p><?php echo $busProductName[$i] ?></p>
-                                    </a>
+                                        <!-- <p><?php echo $busProductName[$i] ?></p> -->
+                                    </div>
                                     <div class="pin">
                                         <div class="pin_inner">
                                             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -271,10 +270,10 @@
                     </div>
                     <div class="home-about_product-m">
                         <?php for($i=0;$i<6;$i++) { ?>
-                            <a href="./product_detail.php" class="home-about_product-m_link" id="bus-<?php echo $i+1 ?>">
+                            <div class="home-about_product-m_link" id="bus-<?php echo $i+1 ?>">
                                 <img src="<?php echo $busProductImg[$i] ?>" alt="">
-                                <p><?php echo $busProductName[$i] ?></p>
-                            </a>
+                                <!-- <p><?php echo $busProductName[$i] ?></p> -->
+                                </div>
                         <?php } ?>
                     </div>
                 </div>
@@ -404,6 +403,10 @@
             navigation: {
                 nextEl: ".home-banner_next",
                 prevEl: ".home-banner_prev",
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
             },
         });
         $(".home-about_pin .pin").click(function(){
