@@ -111,7 +111,7 @@
                     <div class="about_profile_line"></div>
                     <div class="about_profile_item">
                         <div class="about_profile_pic"><img src="../public/img/about-icon-1.svg" alt=""></div>
-                        <h4>Plant Area </h4>
+                        <h4>Factory Dimension</h4>
                         <p>4253SQM</p>
                     </div>
                     <div class="about_profile_line"></div>
