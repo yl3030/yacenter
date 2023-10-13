@@ -2966,6 +2966,9 @@ input, button, textarea {
   .product-detail_title {
     padding-left: 20px;
   }
+  .product-detail_title h2 {
+    width: 55%;
+  }
   .product-detail_content {
     padding-left: 20px;
   }

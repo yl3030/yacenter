@@ -38,12 +38,17 @@ $(".btn-accept").click(function(){
     $(".cookies").fadeOut(300);
 })
 
-$(".header_nav_first>li.drop").each(function(){
-    console.log("!!!");
-    let link = $(this).children("a").attr("data-link");
-    if($(window).width() >= 992) {
-        $(this).children("a").attr("href", link);
-    }else {
-        $(this).children("a").attr("href", "javascript:void(0)");
-    }
+function navLink(){
+    $(".header_nav_first>li.drop").each(function(){
+        let link = $(this).children("a").attr("data-link");
+        if($(window).width() >= 992) {
+            $(this).children("a").attr("href", link);
+        }else {
+            $(this).children("a").attr("href", "javascript:void(0)");
+        }
+    })
+}
+
+$(window).on("resize scroll",function(){
+    navLink();
 })
