@@ -7,7 +7,7 @@
             <nav class="header_nav">
                 <ul class="d-lg-flex header_nav_first">
                     <li class="drop">
-                        <a class="<?php if($pageName == "product") echo "active" ?>">Products</a>
+                        <a class="<?php if($pageName == "product") echo "active" ?>" data-link="./product_car.php">Products</a>
                         <div class="header_nav_second">
                             <ul class="header_nav_second_inner">
                                 <li><a href="./product_car.php">CAR</a></li>
@@ -23,7 +23,7 @@
                         <a href="./about.php" class="<?php if($pageName == "about") echo "active" ?>">About</a>
                     </li>
                     <li class="drop">
-                        <a class="<?php if($pageName == "media") echo "active" ?>">Media</a>
+                        <a class="<?php if($pageName == "media") echo "active" ?>" data-link="./news.php">Media</a>
                         <div class="header_nav_second">
                             <ul class="header_nav_second_inner">
                                 <li><a href="./news.php">NEWS</a></li>

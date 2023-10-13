@@ -27,7 +27,7 @@
                 </div>
             </div>
             <div class="product-detail_title">
-                <h2>Vehicle alarm harness</h2>
+                <h2>Vehicle alarm harnessVehicle alarm harnessVehicle alarm harness</h2>
                 <h3>CAR</h3>
             </div>
             <div class="product-detail_pic">

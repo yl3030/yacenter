@@ -14,11 +14,13 @@
         &_title {
             padding: 90px 0 30px calc((100vw - 1320px) / 2 + 20px);
             position: relative;
+            width: calc((100vw - (100vw - 1320px) / 2 - 40px) * 0.9);
             h2 {
                 font-size: 40px;
                 font-weight: 600;
                 margin: 0;
-                width: 50%;
+                width: 60%;
+                // width: 37%;
             }
             h3 {
                 color: $gray-300;
@@ -178,6 +180,9 @@
                     }
                 }
             }
+        }
+        @media screen and (max-width: 1600px) {
+
         }
         @media screen and (max-width: 1330px) {
             .breadcrumb-common {

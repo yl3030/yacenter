@@ -104,7 +104,7 @@
                         <img class="home-banner_pic" src="../public/img/banner-home.jpg" alt="">
                         <h1 class="home-banner_title">
                             SloganSloganSloganSlogan<br>
-                            SloganSloganSloganSloganSloganSlogan
+                            SloganSloganSloganSloganSlogan
                         </h1>
                     </div>
                 </div>     
@@ -371,7 +371,7 @@
             <div class="container">
                 <div class="row">
                     <?php for($i=0;$i<3;$i++) { ?>
-                        <div class="col-md-4 col-6">
+                        <div class="col-md-4 col-sm-6">
                             <a href="./news_detail.php" class="media-list_item">
                                 <div class="media-list_pic">
                                     <img src="<?php echo $mediaImg[$i] ?>" alt="">
